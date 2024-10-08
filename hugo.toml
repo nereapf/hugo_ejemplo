@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://nereapf.github.io/hugo_ejemplo/'
 languageCode = 'en-us'
 title = 'PÁGINA DE NEREA :)'
 theme = "relearn"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PÁGINA DE NEREA :)</title>
+    <link>https://nereapf.github.io/hugo_ejemplo/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2024 13:23:48 +0200</lastBuildDate>
+    <atom:link href="https://nereapf.github.io/hugo_ejemplo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Descargas</title>
+      <link>https://nereapf.github.io/hugo_ejemplo/descargas/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:23:48 +0200</pubDate>
+      <guid>https://nereapf.github.io/hugo_ejemplo/descargas/index.html</guid>
+      <description>Recursos que puedes obtener Attachments archivo.pdf (35 KB)</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://nereapf.github.io/hugo_ejemplo/markdown/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:23:48 +0200</pubDate>
+      <guid>https://nereapf.github.io/hugo_ejemplo/markdown/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>https://nereapf.github.io/hugo_ejemplo/personal/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:23:48 +0200</pubDate>
+      <guid>https://nereapf.github.io/hugo_ejemplo/personal/index.html</guid>
+      <description>Sobre mí Esta página tiene información sobre mi experiencia técnica.&#xA;Se pueden poner colores, este texto es rosa pero este no</description>
+    </item>
+  </channel>
+</rss>
