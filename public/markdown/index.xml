@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown :: PÁGINA DE NEREA :)</title>
+    <link>http://localhost:1313/markdown/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2024 13:40:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avanzado</title>
+      <link>http://localhost:1313/markdown/avanzado/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/markdown/avanzado/index.html</guid>
+      <description>Edición avanzada</description>
+    </item>
+    <item>
+      <title>Basico</title>
+      <link>http://localhost:1313/markdown/basico/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/markdown/basico/index.html</guid>
+      <description>Edición básica</description>
+    </item>
+    <item>
+      <title>Extensiones</title>
+      <link>http://localhost:1313/markdown/extensiones/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/markdown/extensiones/index.html</guid>
+      <description>Extensiones</description>
+    </item>
+  </channel>
+</rss>

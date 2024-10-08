@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal :: PÁGINA DE NEREA :)</title>
+    <link>http://localhost:1313/personal/index.html</link>
+    <description>Sobre mí Esta página tiene información sobre mi experiencia técnica.&#xA;Se pueden poner colores, este texto es rosa pero este no</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2024 13:40:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programación</title>
+      <link>http://localhost:1313/personal/01_programacion/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:24:40 +0200</pubDate>
+      <guid>http://localhost:1313/personal/01_programacion/index.html</guid>
+      <description>Programación Codigo de php</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/personal/02_markdown/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/personal/02_markdown/index.html</guid>
+      <description>Edición básica Titulos Para establecer los titulos usaré la siguiente sintaxis&#xA;# titulo1 ## titulo2 ### titulo3 #### titulo4 ##### titulo5 Y así se verá&#xA;titulo1 titulo2 titulo3 titulo4 titulo5 Negrita y formato Para ver el texto en negrita escribo&#xA;**Texto en negrita** Texto normal Y se verá&#xA;Texto en negrita Texto normal&#xA;Ver un vídeo de youtube {{`&lt;&gt;}} Añadir botones: PHP es un lenguaje interesante y bonito accede a la web</description>
+    </item>
+    <item>
+      <title>Tema2</title>
+      <link>http://localhost:1313/personal/03_tema2/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:24:44 +0200</pubDate>
+      <guid>http://localhost:1313/personal/03_tema2/index.html</guid>
+      <description>Mis aficiones Comentaré lo que me gusta</description>
+    </item>
+  </channel>
+</rss>
