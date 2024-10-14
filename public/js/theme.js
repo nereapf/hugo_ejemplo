@@ -408,9 +408,9 @@ function initOpenapi( update, attrs ){
             '<html lang="' + lang + '" dir="' + (isRtl ? 'rtl' : 'ltr') + '">' +
                 '<head>' +
                     '<link rel="stylesheet" href="' + window.themeUseOpenapi.css + '">' +
-                    '<link rel="stylesheet" href="' + theme + '">' +
                     '<link rel="stylesheet" href="' + relBasePath + '/css/swagger.css' + assetBuster + '">' +
                     '<link rel="stylesheet" href="' + relBasePath + '/css/swagger-' + swagger_theme + '.css' + assetBuster + '">' +
+                    '<link rel="stylesheet" href="' + theme + '">' +
                 '</head>' +
                 '<body>' +
                     '<a class="relearn-expander" href="" onclick="return relearn_collapse_all()">Collapse all</a>' +
@@ -586,7 +586,7 @@ function initAnchorClipboard(){
 
 function initCodeClipboard(){
     function getCodeText( node ){
-        // if highlight shortcodes is used in inline lineno mode, remove lineno nodes before generating text, otherwise it doesn't hurt
+        // if highlight shortcode is used in inline lineno mode, remove lineno nodes before generating text, otherwise it doesn't hurt
         var code = node.cloneNode( true );
         Array.from( code.querySelectorAll( '*:scope > span > span:first-child:not(:last-child)' ) ).forEach( function( lineno ){
             lineno.remove();
@@ -613,6 +613,44 @@ function initCodeClipboard(){
         return actionMsg;
     }
 
+    document.addEventListener( 'copy', function( ev ){
+        // shabby FF generates empty lines on cursor selection that we need to filter out; see #925
+        var selection = document.getSelection();
+        var node = selection.anchorNode;
+
+        // in case of GC, it works without this handler;
+        // instead GC fails if this handler is active, because it still contains
+        // the line number nodes with class 'ln' in the selection, although
+        // they are flagged with 'user-select: none;' see https://issues.chromium.org/issues/41393366;
+        // so in case of GC we don't want to do anything and bail out early in below code
+        function selectionContainsLnClass( selection ) {
+            for (var i = 0; i < selection.rangeCount; i++) {
+                var range = selection.getRangeAt(i);
+                var fragment = range.cloneContents();
+                if (fragment.querySelector('.ln')) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        if( !selectionContainsLnClass( selection ) ){
+            while( node ){
+                // selection could start in a text node, so account for this as it
+                // obviously does not support `classList`
+                if( node.nodeType === Node.ELEMENT_NODE && node.classList.contains( 'highlight' ) ){
+                    // only do this if we are inside of a code highlight node;
+                    // now fix FFs selection by calculating the text ourself
+                    var text = selection.toString();
+                    ev.clipboardData.setData( 'text/plain', text );
+                    ev.preventDefault();
+                    break;
+                }
+                node = node.parentNode;
+            }
+        }
+    });
+
     var codeElements = document.querySelectorAll( 'code' );
     for( var i = 0; i < codeElements.length; i++ ){
         var code = codeElements[i];
@@ -621,7 +659,7 @@ function initCodeClipboard(){
         var inTable = inPre &&
             code.parentNode.parentNode.tagName.toLowerCase() == 'td' &&
             code.parentNode.parentNode.classList.contains('lntd');
-        // avoid copy-to-clipboard for highlight shortcodes in table lineno mode
+        // avoid copy-to-clipboard for highlight shortcode in table lineno mode
         var isFirstLineCell = inTable &&
             code.parentNode.parentNode.parentNode.querySelector( 'td:first-child > pre > code' ) == code;
 
