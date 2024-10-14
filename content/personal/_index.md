@@ -10,4 +10,11 @@ Esta página tiene información sobre mi experiencia técnica.
 
 ---
 
+{{<objetivos>}}
+Introducción
+Sobre mí
+Preferencias
+Darme a conocer
+{{</objetivos>}}
+
 Se pueden poner colores, {{<color color="pink">}} este texto es rosa {{</color>}} pero este no
