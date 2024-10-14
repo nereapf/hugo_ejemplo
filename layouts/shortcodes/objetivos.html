@@ -2,7 +2,7 @@
 
 <h1>{{$titulo}}</h1>
 <ul>
-    {{$lineas := split .Inner, "\n"}}
+    {{$lineas := split .Inner "\n"}}
     {{range $linea := $lineas}}
         <li>{.}</li>
     {{end}}
