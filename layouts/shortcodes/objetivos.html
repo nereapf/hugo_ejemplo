@@ -1,0 +1,9 @@
+{{$titulo := .Get "titulo" | default "Objetivos"}}
+
+<h1>{{$titulo}}</h1>
+<ul>
+    {{$lineas := split .Inner, "\n"}}
+    {{range $linea := $lineas}}
+        <li>{.}</li>
+    {{end}}
+</ul>
