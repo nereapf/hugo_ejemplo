@@ -6,5 +6,4 @@ draft = false
 
 # Recursos que puedes obtener
 
-{{% resources style=primary" expanded="false" /%}}
 

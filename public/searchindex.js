@@ -40,6 +40,22 @@ var relearn_searchindex = [
     "uri": "/hugo_ejemplo/personal/02_markdown/index.html"
   },
   {
+    "breadcrumb": "PÁGINA DE NEREA :)",
+    "content": "Esto es el contenido de la página",
+    "description": "Esto es el contenido de la página",
+    "tags": [],
+    "title": "Plantilla",
+    "uri": "/hugo_ejemplo/plantilla/index.html"
+  },
+  {
+    "breadcrumb": "PÁGINA DE NEREA :)",
+    "content": "Esto es el contenido con un listado de canales",
+    "description": "Esto es el contenido con un listado de canales",
+    "tags": [],
+    "title": "Plantilla",
+    "uri": "/hugo_ejemplo/tv/index.html"
+  },
+  {
     "breadcrumb": "PÁGINA DE NEREA :) \u003e Personal",
     "content": "Mis aficiones Comentaré lo que me gusta",
     "description": "Mis aficiones Comentaré lo que me gusta",
@@ -73,8 +89,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "PÁGINA DE NEREA :)",
-    "content": "Sobre mí Esta página tiene información sobre mi experiencia técnica.\nSe pueden poner colores, este texto es rosa pero este no",
-    "description": "Sobre mí Esta página tiene información sobre mi experiencia técnica.\nSe pueden poner colores, este texto es rosa pero este no",
+    "content": "Sobre mí Esta página tiene información sobre mi experiencia técnica.\nObjetivos\rIntroducción\rSobre mí\rPreferencias\rDarme a conocer\rSe pueden poner colores, este texto es rosa pero este no",
+    "description": "Sobre mí Esta página tiene información sobre mi experiencia técnica.\nObjetivos\rIntroducción\rSobre mí\rPreferencias\rDarme a conocer\rSe pueden poner colores, este texto es rosa pero este no",
     "tags": [],
     "title": "Personal",
     "uri": "/hugo_ejemplo/personal/index.html"

@@ -6,8 +6,22 @@
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2024 13:23:48 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2024 13:40:24 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/hugo_ejemplo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plantilla</title>
+      <link>http://localhost:1313/hugo_ejemplo/plantilla/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/hugo_ejemplo/plantilla/index.html</guid>
+      <description>Esto es el contenido de la página</description>
+    </item>
+    <item>
+      <title>Plantilla</title>
+      <link>http://localhost:1313/hugo_ejemplo/tv/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 13:40:24 +0200</pubDate>
+      <guid>http://localhost:1313/hugo_ejemplo/tv/index.html</guid>
+      <description>Esto es el contenido con un listado de canales</description>
+    </item>
     <item>
       <title>Descargas</title>
       <link>http://localhost:1313/hugo_ejemplo/descargas/index.html</link>
@@ -27,7 +41,7 @@
       <link>http://localhost:1313/hugo_ejemplo/personal/index.html</link>
       <pubDate>Fri, 04 Oct 2024 13:23:48 +0200</pubDate>
       <guid>http://localhost:1313/hugo_ejemplo/personal/index.html</guid>
-      <description>Sobre mí Esta página tiene información sobre mi experiencia técnica.&#xA;Se pueden poner colores, este texto es rosa pero este no</description>
+      <description>Sobre mí Esta página tiene información sobre mi experiencia técnica.&#xA;Objetivos&#xD;Introducción&#xD;Sobre mí&#xD;Preferencias&#xD;Darme a conocer&#xD;Se pueden poner colores, este texto es rosa pero este no</description>
     </item>
   </channel>
 </rss>

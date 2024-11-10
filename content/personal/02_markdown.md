@@ -50,7 +50,7 @@ Y se verá
 
 ##### Añadir botones:
 
-PHP es un lenguaje interesante y bonito {{<button style="info" href="https://php.net">}} accede a la web {{</button>}}
+PHP es un lenguaje interesante y bonito accede a la web
 
 ---
 

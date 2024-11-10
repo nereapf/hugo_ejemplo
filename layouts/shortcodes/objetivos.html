@@ -5,7 +5,9 @@
     <ul>
         {{$lineas := split .Inner "\n"}}
         {{range $linea := $lineas}}
-        <li>{.}</li>
+            {{- if gt (len $linea) 0 -}}
+                <li>{{$linea}}</li>
+            {{end}}
         {{end}}
     </ul>
 </div>

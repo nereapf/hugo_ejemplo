@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<body>
+    {{$nombre := "Nerea"}}
+
+    <h1>Esta es mi plantilla</h1>
+    <h2>Realizado por <span style="color:darkred">{{$nombre}}</span></h2>
+    <p>Aquí querré ver el contenido de la página</p>
+
+    <ul>
+        <li>Fecha: {{.Page.Date}}</li>
+        <li>Titulo: {{.Page.Title}}</li>
+        <li>URL: {{.Page.Date}}</li>
+    </ul>
+
+    <hr>
+    {{.Content}}
+    <hr>
+
+</body>
+</html>
